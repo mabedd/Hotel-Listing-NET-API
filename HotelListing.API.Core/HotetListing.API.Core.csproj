@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>HotelListing.API.Core</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Models\" />
+    <None Remove="Models\Exceptions\" />
+    <None Remove="Models\Middleware\" />
+    <None Remove="Models\Repository\" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="System.IdentityModel.Tokens.Jwt" />
+    <None Remove="Microsoft.AspNetCore.Identity" />
+    <None Remove="Microsoft.IdentityModel.Tokens" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Models\Exceptions\" />
+    <Folder Include="Models\Middleware\" />
+    <Folder Include="Models\Repository\" />
+  </ItemGroup>
+  <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="12.0.0" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+      <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.25.1" />
+      <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+      <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.25.1" />
+  </ItemGroup>
+</Project>
